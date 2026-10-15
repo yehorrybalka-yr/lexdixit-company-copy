@@ -1,0 +1,9 @@
+{
+  "trailingSlash": true,
+  "redirects": [
+    { "source": "/v2/sl/", "destination": "/v2/sl-autonomo/", "permanent": true },
+    { "source": "/v2/autonomo/", "destination": "/v2/sl-autonomo/", "permanent": true },
+    { "source": "/v2/eng/sl/", "destination": "/v2/eng/sl-autonomo/", "permanent": true },
+    { "source": "/v2/eng/autonomo/", "destination": "/v2/eng/sl-autonomo/", "permanent": true }
+  ]
+}

@@ -1,0 +1,912 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <!-- Google Tag Manager -->
+  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+  j=d.createElement(s),dl=l!='dataLayer'?'&l='+dl:'';j.async=true;j.src=
+  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer','GTM-NC5BHKQ7');</script>
+  <!-- End Google Tag Manager -->
+
+  <!-- Google Ads Tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=AW-10810472312"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'AW-10810472312');
+  </script>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LEX DIXIT — Юридический партнер в Испании</title>
+  
+  <!-- Шрифты -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lora:wght@500;600;700&family=Montserrat:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  
+  <!-- Иконки FontAwesome (6.5.1) -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  
+  <!-- Стили библиотек -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.19/css/intlTelInput.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+  <style>
+    :root {
+      --bg-dark: #0A0D14;
+      --bg-card: #121722;
+      --bg-card-border: rgba(255, 255, 255, 0.1);
+      --accent-red: #E5383B;
+      --accent-red-hover: #C5221F;
+      --text-main: #FFFFFF;
+      --text-muted: #A0AEC0;
+      --font-serif: 'Lora', serif;
+      --font-sans: 'Montserrat', sans-serif;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      background-color: var(--bg-dark);
+      color: var(--text-main);
+      font-family: var(--font-sans);
+      line-height: 1.6;
+      overflow-x: hidden;
+    }
+
+    .container {
+      max-width: 1240px;
+      margin: 0 auto;
+      padding: 0 24px;
+      width: 100%;
+    }
+
+    /* Хедер */
+    .header {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      z-index: 100;
+      padding: 28px 0;
+    }
+
+    .logo-text-wrapper {
+      display: inline-flex;
+      flex-direction: column;
+      text-decoration: none;
+      user-select: none;
+    }
+
+    .logo-main {
+      font-family: var(--font-sans);
+      font-size: 1.8rem;
+      font-weight: 800;
+      letter-spacing: 1px;
+      line-height: 1;
+      text-transform: uppercase;
+      color: #FFFFFF;
+    }
+
+    .logo-sub {
+      font-family: var(--font-sans);
+      font-size: 0.65rem;
+      font-weight: 500;
+      color: rgba(255, 255, 255, 0.65);
+      letter-spacing: 1.5px;
+      text-transform: lowercase;
+      margin-top: 4px;
+    }
+
+
+    /* Hero Блок */
+    .hero {
+      position: relative;
+      min-height: 100vh;
+      padding-top: 160px;
+      padding-bottom: 80px;
+      display: flex;
+      align-items: center;
+      background-color: var(--bg-dark);
+    }
+
+    .hero-layout {
+      display: grid;
+      grid-template-columns: minmax(0, 1.15fr) minmax(280px, 0.85fr);
+      grid-template-areas:
+        "heading photo"
+        "body photo";
+      column-gap: 48px;
+      row-gap: 24px;
+      align-items: start;
+    }
+
+    .hero-heading {
+      grid-area: heading;
+    }
+
+    .hero-heading .hero-title {
+      margin-bottom: 0;
+    }
+
+    .hero-content {
+      grid-area: body;
+      max-width: none;
+    }
+
+    .hero-photo-card {
+      grid-area: photo;
+      background: var(--bg-card);
+      border: 1px solid var(--bg-card-border);
+      border-radius: 16px;
+      overflow: hidden;
+      box-shadow: 0 18px 40px rgba(0, 0, 0, 0.35);
+      align-self: stretch;
+      display: flex;
+    }
+
+    .hero-photo-card img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      min-height: 380px;
+      object-fit: cover;
+      object-position: center top;
+      flex: 1;
+    }
+
+    .hero-badge {
+      display: inline-block;
+      color: var(--accent-red);
+      font-size: 0.85rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 1.5px;
+      margin-bottom: 16px;
+    }
+
+    .hero-title {
+      font-family: var(--font-serif);
+      font-size: 2.7rem;
+      line-height: 1.15;
+      font-weight: 600;
+      margin-bottom: 24px;
+      color: #FFFFFF;
+    }
+
+    .hero-title .highlight {
+      color: var(--accent-red);
+      font-family: inherit;
+      font-style: normal;
+    }
+
+    .hero-divider {
+      width: 100%;
+      height: 1px;
+      background: rgba(255, 255, 255, 0.15);
+      margin-bottom: 24px;
+    }
+
+    .hero-subtitle {
+      color: var(--text-muted);
+      font-size: 1.05rem;
+      margin-bottom: 32px;
+      max-width: 660px;
+    }
+
+    .hero-bullets {
+      list-style: none;
+      margin-bottom: 40px;
+    }
+
+    .hero-bullets li {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      margin-bottom: 14px;
+      font-size: 0.95rem;
+      color: #E2E8F0;
+    }
+
+    .hero-bullets li i {
+      color: var(--accent-red);
+      font-size: 0.9rem;
+    }
+
+    .cta-action-group {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+      align-items: flex-start;
+    }
+
+    .cta-messengers {
+      display: flex;
+      gap: 16px;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+
+
+    .hero-cta {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+    }
+
+    .hero-cta-prompt {
+      font-size: 1.05rem;
+      font-weight: 600;
+      color: #FFFFFF;
+      margin-bottom: 16px;
+      line-height: 1.4;
+    }
+
+    .btn-main-cta {
+      display: inline-flex;
+      align-items: center;
+      gap: 12px;
+      padding: 16px 36px;
+      background-color: var(--accent-red);
+      color: #FFF;
+      font-family: var(--font-sans);
+      font-weight: 700;
+      font-size: 0.95rem;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      border: none;
+      cursor: pointer;
+      transition: background-color 0.2s, transform 0.2s, box-shadow 0.2s;
+      box-shadow: 0 10px 25px rgba(229, 56, 59, 0.3);
+    }
+
+    .btn-main-cta:hover {
+      background-color: var(--accent-red-hover);
+      transform: translateY(-2px);
+      box-shadow: 0 14px 30px rgba(229, 56, 59, 0.4);
+    }
+
+    .btn-messenger {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      padding: 16px 24px;
+      color: #FFF;
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 0.9rem;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      background-color: rgba(255, 255, 255, 0.06);
+      border: 1px solid rgba(255, 255, 255, 0.15);
+      transition: opacity 0.2s, transform 0.2s, background-color 0.2s;
+    }
+
+    .btn-messenger:hover {
+      background-color: rgba(255, 255, 255, 0.12);
+      transform: translateY(-2px);
+    }
+
+    /* Модальное окно */
+    .modal-overlay {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(4, 6, 10, 0.85);
+      backdrop-filter: blur(8px);
+      z-index: 1000;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 20px;
+      opacity: 0;
+      visibility: hidden;
+      transition: opacity 0.3s ease, visibility 0.3s ease;
+    }
+
+    .modal-overlay.active {
+      opacity: 1;
+      visibility: visible;
+    }
+
+    .modal-container {
+      position: relative;
+      width: 100%;
+      max-width: 460px;
+      transform: translateY(30px) scale(0.95);
+      transition: transform 0.3s ease;
+    }
+
+    .modal-overlay.active .modal-container {
+      transform: translateY(0) scale(1);
+    }
+
+    .modal-close {
+      position: absolute;
+      top: 16px;
+      right: 20px;
+      background: none;
+      border: none;
+      color: var(--text-muted);
+      font-size: 1.8rem;
+      line-height: 1;
+      cursor: pointer;
+      z-index: 10;
+      transition: color 0.2s;
+    }
+
+    .modal-close:hover {
+      color: #FFF;
+    }
+
+    /* Форма */
+    .form-card {
+      background: var(--bg-card);
+      border: 1px solid var(--bg-card-border);
+      padding: 40px 32px;
+      box-shadow: 0 30px 60px rgba(0, 0, 0, 0.8);
+    }
+
+    .form-caption {
+      text-align: center;
+      color: var(--text-muted);
+      font-size: 0.85rem;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      margin-bottom: 6px;
+    }
+
+    .form-title {
+      font-family: var(--font-serif);
+      font-size: 1.75rem;
+      text-align: center;
+      margin-bottom: 24px;
+      font-weight: 500;
+    }
+
+    .form-group {
+      margin-bottom: 20px;
+    }
+
+    .form-label {
+      display: block;
+      font-size: 0.85rem;
+      color: var(--text-muted);
+      margin-bottom: 12px;
+      font-weight: 500;
+    }
+
+    .service-vertical-list {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    .service-radio-label {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      padding: 10px 14px;
+      background: rgba(255, 255, 255, 0.02);
+      border: 1px solid var(--bg-card-border);
+      cursor: pointer;
+      font-size: 0.88rem;
+      transition: border-color 0.2s, background-color 0.2s;
+      user-select: none;
+    }
+
+    .service-radio-label:hover {
+      border-color: rgba(255, 255, 255, 0.3);
+      background: rgba(255, 255, 255, 0.04);
+    }
+
+    .service-radio-label input[type="radio"] {
+      appearance: none;
+      width: 16px;
+      height: 16px;
+      border: 1px solid var(--text-muted);
+      border-radius: 50%;
+      outline: none;
+      display: grid;
+      place-content: center;
+      flex-shrink: 0;
+    }
+
+    .service-radio-label input[type="radio"]::before {
+      content: "";
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      transform: scale(0);
+      transition: 120ms transform ease-in-out;
+      background-color: var(--accent-red);
+    }
+
+    .service-radio-label input[type="radio"]:checked {
+      border-color: var(--accent-red);
+    }
+
+    .service-radio-label input[type="radio"]:checked::before {
+      transform: scale(1);
+    }
+
+    .service-radio-label input[type="radio"]:checked + span {
+      color: #FFF;
+      font-weight: 600;
+    }
+
+    .input-field {
+      width: 100%;
+      padding: 14px 16px;
+      background: rgba(255, 255, 255, 0.03);
+      border: 1px solid var(--bg-card-border);
+      color: #FFF;
+      font-family: var(--font-sans);
+      font-size: 0.9rem;
+      outline: none;
+      transition: border-color 0.2s;
+    }
+
+    .input-field:focus {
+      border-color: var(--accent-red);
+    }
+
+    /* intl-tel-input */
+    .iti { width: 100%; }
+    .iti__country-list {
+      background-color: var(--bg-card);
+      border: 1px solid var(--bg-card-border);
+      color: #FFF;
+    }
+    .iti__country.iti__highlight { background-color: rgba(255, 255, 255, 0.1); }
+    .iti__country-name, .iti__dial-code { color: #FFF; }
+
+    .btn-submit {
+      width: 100%;
+      padding: 16px;
+      background: var(--accent-red);
+      color: #FFF;
+      font-family: var(--font-sans);
+      font-weight: 700;
+      font-size: 0.9rem;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      border: none;
+      cursor: pointer;
+      margin-top: 10px;
+      transition: background-color 0.2s;
+    }
+
+    .btn-submit:hover {
+      background-color: var(--accent-red-hover);
+    }
+
+    .btn-submit:disabled {
+      opacity: 0.6;
+      cursor: not-allowed;
+    }
+
+    /* Отзывы */
+    .reviews {
+      padding: 100px 0;
+      background-color: #080A0F;
+      border-top: 1px solid rgba(255, 255, 255, 0.05);
+      width: 100%;
+      overflow: hidden;
+    }
+
+    .section-title {
+      font-family: var(--font-serif);
+      font-size: 2.4rem;
+      text-align: center;
+      margin-bottom: 50px;
+      font-weight: 500;
+    }
+
+    .reviews-slider {
+      width: 100%;
+      padding: 10px 0;
+    }
+
+    .reviews-slider .swiper-wrapper {
+      transition-timing-function: linear !important;
+    }
+
+    .swiper-slide {
+      height: auto;
+      width: 380px;
+    }
+
+    .review-card {
+      background: var(--bg-card);
+      border: 1px solid var(--bg-card-border);
+      padding: 32px 26px;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    .review-text {
+      font-size: 0.95rem;
+      color: var(--text-muted);
+      line-height: 1.7;
+      margin-bottom: 24px;
+      font-style: italic;
+    }
+
+    .review-author {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+    }
+
+    .review-avatar {
+      width: 44px;
+      height: 44px;
+      border-radius: 50%;
+      background: rgba(229, 56, 59, 0.15);
+      border: 1px solid var(--accent-red);
+      color: var(--accent-red);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 700;
+      font-size: 0.9rem;
+    }
+
+    .author-name {
+      font-weight: 600;
+      font-size: 0.95rem;
+    }
+
+    .author-role {
+      font-size: 0.8rem;
+      color: var(--text-muted);
+    }
+
+    /* Адаптивность */
+    @media (max-width: 900px) {
+      .hero-layout {
+        grid-template-columns: 1fr;
+        grid-template-areas:
+          "heading"
+          "photo"
+          "body";
+        row-gap: 28px;
+      }
+
+      .hero-photo-card img {
+        min-height: 240px;
+        max-height: 320px;
+      }
+    }
+
+    @media (max-width: 768px) {
+      .hero-title { font-size: 2.4rem; }
+      .hero-cta { align-items: stretch; }
+      .cta-action-group { align-items: stretch; }
+      .cta-messengers { flex-direction: column; align-items: stretch; }
+      .btn-main-cta, .btn-messenger { justify-content: center; width: 100%; }
+      .swiper-slide { width: 300px; }
+      .form-card { padding: 30px 20px; }
+    }
+
+    @media (max-width: 480px) {
+      .hero { padding-top: 120px; }
+      .hero-title { font-size: 1.9rem; }
+    }
+  </style>
+</head>
+<body>
+  <!-- Google Tag Manager (noscript) -->
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NC5BHKQ7"
+  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+  <!-- End Google Tag Manager (noscript) -->
+
+  <!-- Хедер -->
+  <header class="header">
+    <div class="container">
+      <a href="#" class="logo-text-wrapper">
+        <div class="logo-main">LEX DIXIT</div>
+        <div class="logo-sub">tax &amp; legal</div>
+      </a>
+    </div>
+  </header>
+
+  <!-- Hero Блок -->
+  <section class="hero">
+    <div class="container">
+      <div class="hero-layout">
+        <div class="hero-heading">
+          <span class="hero-badge">На рынке более 12 лет</span>
+        <h1 class="hero-title">
+          Стань <span class="highlight">налоговым резидентом Испании</span> безопасно и без скрытых штрафов.
+        </h1>
+        </div>
+        <div class="hero-photo-card">
+          <img src="/v2/lexdixitteam.webp" alt="Команда LEX DIXIT">
+        </div>
+        <div class="hero-content">
+<div class="hero-divider"></div>
+
+        <p class="hero-subtitle">
+          Поможем определить твой налоговый статус, избежать двойного налогообложения и оформить всё по закону.
+        </p>
+
+        <ul class="hero-bullets">
+          <li><i class="fa-solid fa-check"></i> <span>Консультация по статусу резидента</span></li>
+          <li><i class="fa-solid fa-check"></i> <span>Работа с соглашениями об избежании двойного налогообложения</span></li>
+          <li><i class="fa-solid fa-check"></i> <span>Подготовка и подача документов</span></li>
+        </ul>
+
+        <div class="hero-cta">
+          <p class="hero-cta-prompt">Напишите нам для дальнейшей консультации</p>
+          <div class="cta-action-group">
+          <button class="btn-main-cta" id="openModalBtn">
+            <span>Решить свой запрос:</span>
+            <i class="fa-solid fa-arrow-right"></i>
+          </button>
+
+          <div class="cta-messengers">
+          <a href="https://wa.me/34614369494" class="btn-messenger" target="_blank">
+            <i class="fa-brands fa-whatsapp"></i> WhatsApp
+          </a>
+          <a href="https://t.me/DarynaManagerLexDixit" class="btn-messenger" target="_blank">
+            <i class="fa-brands fa-telegram"></i> Telegram
+          </a>
+          </div>
+        </div>
+        </div>
+
+      </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Всплывающее модальное окно с формой -->
+  <div class="modal-overlay" id="formModal">
+    <div class="modal-container">
+      <button class="modal-close" id="closeModalBtn" aria-label="Закрыть">&times;</button>
+      
+      <div class="form-card">
+        <p class="form-caption">Оставляй заявку</p>
+        <h2 class="form-title">Решить свой запрос:</h2>
+
+        <form id="leadForm">
+
+          <div class="form-group">
+            <label class="form-label" for="name">Ваше имя</label>
+            <input type="text" id="name" class="input-field" placeholder="Иван" required>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="phone">Номер телефона</label>
+            <input type="tel" id="phone" class="input-field" required>
+          </div>
+
+          <button type="submit" class="btn-submit">Оставляй заявку</button>
+        </form>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- Отзывы -->
+  <section class="reviews">
+    <div class="container">
+      <h2 class="section-title">Отзывы наших клиентов</h2>
+    </div>
+    
+    <div class="swiper reviews-slider">
+      <div class="swiper-wrapper">
+        
+        <div class="swiper-slide">
+          <div class="review-card">
+            <p class="review-text">«Открыл ИП в Испании без лишней бюрократии. Команда взяла на себя все документы, подробно объяснили систему налогообложения. Все четко и по делу!»</p>
+            <div class="review-author">
+              <div class="review-avatar">АМ</div>
+              <div>
+                <div class="author-name">Александр М.</div>
+                <div class="author-role">Регистрация Autonomo</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="swiper-slide">
+          <div class="review-card">
+            <p class="review-text">«Помогли зарегистрировать компанию SL и выстроить правильную структуру налогов. Сэкономили кучу времени и денег. Никаких скрытых платежей, все прозрачно.»</p>
+            <div class="review-author">
+              <div class="review-avatar">ЕК</div>
+              <div>
+                <div class="author-name">Елена К.</div>
+                <div class="author-role">Регистрация SL & Налоги</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="swiper-slide">
+          <div class="review-card">
+            <p class="review-text">«Обратился за оптимизацией налоговой нагрузки. Ребята нашли абсолютно легальные решения, которые позволили существенно снизить выплаты. Профессионалы своего дела.»</p>
+            <div class="review-author">
+              <div class="review-avatar">ДВ</div>
+              <div>
+                <div class="author-name">Дмитрий В.</div>
+                <div class="author-role">Оптимизация налогов</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="swiper-slide">
+          <div class="review-card">
+            <p class="review-text">«Оформляли легализацию бизнеса под ключ. Очень порадовала скорость работы и то, что всегда были на связи в мессенджерах. Рекомендую всем коллегам!»</p>
+            <div class="review-author">
+              <div class="review-avatar">МР</div>
+              <div>
+                <div class="author-name">Михаил Р.</div>
+                <div class="author-role">Легализация бизнеса</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="swiper-slide">
+          <div class="review-card">
+            <p class="review-text">«Грамотная консультация по налогообложению в Испании сберегла для нашего стартапа ощутимый бюджет. Все разъяснили до мельчайших деталей.»</p>
+            <div class="review-author">
+              <div class="review-avatar">ОС</div>
+              <div>
+                <div class="author-name">Ольга С.</div>
+                <div class="author-role">Налоговый консалтинг</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="swiper-slide">
+          <div class="review-card">
+            <p class="review-text">«Сопровождение процессов прошло идеально. Всё без лишней головной боли — пока я занимался развитием проекта, юристы решили все бумажные вопросы.»</p>
+            <div class="review-author">
+              <div class="review-avatar">ВК</div>
+              <div>
+                <div class="author-name">Виктор К.</div>
+                <div class="author-role">Юридическое сопровождение</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Скрипты -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.19/js/intlTelInput.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.19/js/utils.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+  <script>
+    // Маска ввода телефона
+    const phoneInput = document.querySelector("#phone");
+    const iti = window.intlTelInput(phoneInput, {
+      initialCountry: "es",
+      preferredCountries: ["es", "ua", "kz", "ge", "us"],
+      nationalMode: false,
+      autoInsertDialCode: true,
+      utilsScript: "https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.19/js/utils.js"
+    });
+
+    // Модальное окно
+    const openModalBtn = document.getElementById("openModalBtn");
+    const closeModalBtn = document.getElementById("closeModalBtn");
+    const formModal = document.getElementById("formModal");
+
+    openModalBtn.addEventListener("click", () => {
+      formModal.classList.add("active");
+    });
+
+    closeModalBtn.addEventListener("click", () => {
+      formModal.classList.remove("active");
+    });
+
+    formModal.addEventListener("click", (e) => {
+      if (e.target === formModal) {
+        formModal.classList.remove("active");
+      }
+    });
+
+    document.addEventListener("keydown", (e) => {
+      if (e.key === "Escape" && formModal.classList.contains("active")) {
+        formModal.classList.remove("active");
+      }
+    });
+
+    // Валидация и отправка формы в Google Таблицу + Аналитику
+    document.getElementById("leadForm").addEventListener("submit", function(e) {
+      e.preventDefault();
+      
+      if (!iti.isValidNumber()) {
+        alert("Пожалуйста, введите корректный номер телефона.");
+        return;
+      }
+
+      const form = this;
+      const submitBtn = form.querySelector('.btn-submit');
+      submitBtn.disabled = true;
+      submitBtn.textContent = "Отправка...";
+
+      const selectedService = document.querySelector('input[name="service"]:checked')?.value || "";
+      
+      const payload = {
+        quiz_tag: "one_page_website",
+        name: document.getElementById("name").value,
+        phone_full: iti.getNumber(),
+        service: selectedService
+      };
+
+      // Отправка данных на скрипт Google Apps Script
+      fetch("https://script.google.com/macros/s/AKfycbwlvljZMHbd_nUUwz_mypL5np6xX8bOtBdtafYIULClMqsZKWAl1hf8oOSfo-sjFYKumg/exec", {
+        method: "POST",
+        mode: "no-cors",
+        headers: {
+          "Content-Type": "application/json"
+        },
+        body: JSON.stringify(payload)
+      })
+      .then(() => {
+        // Отправка конверсии напрямую в Google Ads
+        if (typeof gtag === 'function') {
+          gtag('event', 'conversion', {
+            'send_to': 'AW-10810472312/DG-7CLTMm_EbEPju6qIo'
+          });
+        }
+
+        // Пуш события в dataLayer (для GTM)
+        window.dataLayer = window.dataLayer || [];
+        window.dataLayer.push({
+          'event': 'lead_form_submit'
+        });
+
+        alert("Заявка успешно отправлена!");
+        form.reset();
+        formModal.classList.remove("active");
+      })
+      .catch((error) => {
+        console.error("Ошибка при отправке данных:", error);
+        alert("Произошла ошибка при отправке заявки. Попробуйте ещё раз.");
+      })
+      .finally(() => {
+        submitBtn.disabled = false;
+        submitBtn.textContent = "Оставляй заявку";
+      });
+    });
+
+    // Бесконечная плавная карусель отзывов
+    const swiper = new Swiper('.reviews-slider', {
+      slidesPerView: 'auto',
+      spaceBetween: 24,
+      loop: true,
+      speed: 7000,
+      autoplay: {
+        delay: 0,
+        disableOnInteraction: false,
+        pauseOnMouseEnter: true
+      },
+      grabCursor: true,
+      allowTouchMove: true
+    });
+  </script>
+</body>
+</html>
